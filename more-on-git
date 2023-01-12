@@ -1,0 +1,17 @@
+Now we will look after more commands of git
+
+# To see - 
+ 
+ to see your current stage of git file we use
+ * git log - use this to view your old commit history 
+ * git status - used to see your all non added file
+
+Use this git log and git status every single after create or commit or add any new think to your git repo . this will you to determine and remember your git learning
+
+# To fetch/pull
+ 
+ * git clone - use to transfer any blog orfile from any git repo to your local or remote folder
+ * git pull - 
+ * git fetch - 
+
+
