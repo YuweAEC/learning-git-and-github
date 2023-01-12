@@ -1,0 +1,13 @@
+# TO create -
+
+* git init - to create or make any file folder a git file or folder (also to convert)
+
+# TO add -
+
+* git add - "." used to add all files int stagging or write any specific file name after git add
+* git commit - to add in history or to for fianlly adding in remote which is ready to push
+
+# TO push -
+
+* git push - to add your file into your git repository
+
