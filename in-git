@@ -1,13 +1,13 @@
 # TO create -
 
-* git init - to create or make any file folder a git file or folder (also to convert)
+* git init - to initialize a new git repository
 
 # TO add -
 
-* git add - "." used to add all files int stagging or write any specific file name after git add
-* git commit - to add in history or to for fianlly adding in remote which is ready to push
+* git add [ <files> or < . > (to add all files)]- adds files to the staging area
+* git commit -m "message" - Used to commit files (locally or on remote) on the repository
 
 # TO push -
 
-* git push - to add your file into your git repository
+* git push <remote or local> <branch name> - used to save all commits to the remote or local repository
 
