@@ -1,13 +1,13 @@
 # TO create -
 
-* git init - to initialize a new git repository
+ * git init - to initialize a new git repository
 
 # TO add -
 
-* git add [ <files> or < . > (to add all files)]- adds files to the staging area
-* git commit -m "message" - Used to commit files (locally or on remote) on the repository
+ * git add [ <files> or < . > (to add all files)] - adds files to the staging area
+ * git commit -m "message" - Used to commit files (locally or on remote) on the repository
 
 # TO push -
 
-* git push <remote or local> <branch name> - used to save all commits to the remote or local repository
+ * git push <remote or local> <branch name> - used to save all commits to the remote or local repository
 
