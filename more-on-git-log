@@ -3,4 +3,4 @@ Now we all will see more commands using git log
 # git log 
  
  - git log --oneline - this is flag command of git log which is use to view the repository's infomation
-
+ - git log --stat - 
