@@ -6,9 +6,9 @@ The git show command will show only one commit. So don't get alarmed when you ca
 
 So by default, git show displays:
 
-*the commit
-*the author
-*the date
-*the commit message
-*the patch information
+ *the commit
+ *the author
+ *the date
+ *the commit message
+ *the patch information
 
