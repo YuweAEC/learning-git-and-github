@@ -13,5 +13,7 @@ Now we all will see the flag's of git log which are used to see the information 
    - displays a summary line with the total number of modified files and lines that have been added/removed
  
  -> git log --p:
-   - 
+   - displays the files that have been modified
+   - displays the location of the lines that have been added/removed
+   - displays the actual changes that have been made 
 
