@@ -1,4 +1,4 @@
-Now we all will see more commands using git log 
+Now we all will see the flag's of git log which are used to see the information and the details of or various commits entire that repo
 
 # git log 
  
@@ -6,9 +6,12 @@ Now we all will see more commands using git log
    - lists one commit per line
    - shows the first 7 characters of the commit's SHA
    - shows the commit's message
+ 
  -> git log --stat:
    - displays the file(s) that have been modified
    - displays the number of lines that have been added/removed
    - displays a summary line with the total number of modified files and lines that have been added/removed
-
+ 
+ -> git log --p:
+   - 
 
