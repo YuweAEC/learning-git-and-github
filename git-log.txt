@@ -20,4 +20,3 @@ Now we all will see the flag's of git log which are used to see the information 
  -> git log -w:
    - to ignore changes to whitespace
 
-
