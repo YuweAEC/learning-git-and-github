@@ -1,4 +1,4 @@
-Now we will look after more commands of git
+Now we will look after the commands of git through we can see or fetch\pull any data about our repo and file
 
 # To see - 
  
