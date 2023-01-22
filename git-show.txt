@@ -1,0 +1,14 @@
+now introducing a new commands 
+
+# git show :
+
+The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
+
+So by default, git show displays:
+
+*the commit
+*the author
+*the date
+*the commit message
+*the patch information
+
