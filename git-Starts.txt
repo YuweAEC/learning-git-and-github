@@ -1,3 +1,6 @@
+From here we start our git journey 
+
+
 # TO create -
 
  * git init - to initialize a new git repository
