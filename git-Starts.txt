@@ -1,14 +1,11 @@
-From here we start our git journey 
+From here we start our git journey .
+
+Now we will se who to convert or make any file or folder into git file or folder 
 
 
 # TO create -
 
  * git init - to initialize a new git repository
-
-# TO add -
-
- * git add [ <files> or < . > (to add all files)] - adds files to the staging area
- * git commit -m "message" - Used to commit files (locally or on remote) on the repository
 
 # TO push -
 
