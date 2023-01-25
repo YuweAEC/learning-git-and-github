@@ -1,0 +1,5 @@
+# TO add -
+
+ * git add [ <files> or < . > (to add all files)] - adds files to the staging area
+ * git commit -m "message" - Used to commit files (locally or on remote) on the repositorys
+
