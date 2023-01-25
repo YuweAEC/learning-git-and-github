@@ -1,5 +1,4 @@
-here we all will see 2 commands to view the details and see every single info about our file going on the git 
-alo we will bs able to view various flag's of git log which are used to see the information and the details of or various commits entire that repo
+here we all will see various flag's of git log which are used to see the information and the details of or various commits entire that repo
 
 
 # git log 
