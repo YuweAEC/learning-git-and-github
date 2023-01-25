@@ -5,7 +5,11 @@ Now we will look after the commands of git through we can see or fetch\pull any 
  to see your current stage of git file we use:
 
  * git log - used to view the entire commit history 
+
  * git status - used to check the state of the staging area , as well as the working directory
+   
+   - tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
+   - files that Git is tracking that have been modified
 
 Use this git log and git status every single after create or commit or add any new think to your git repo . this will you to determine and remember your git learning
 
