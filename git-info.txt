@@ -1,4 +1,12 @@
-Now we all will see the flag's of git log which are used to see the information and the details of or various commits entire that repo
+here we all will see 2 commands to view the details and see every single info about our file going on the git 
+alo we will bs able to view various flag's of git log which are used to see the information and the details of or various commits entire that repo
+
+# git status
+
+The git status command will display the current status of the repository.
+
+ - tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
+ - files that Git is tracking that have been modified
 
 # git log 
  
