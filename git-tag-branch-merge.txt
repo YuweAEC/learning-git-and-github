@@ -1,6 +1,7 @@
 Here my advancement in git get starts 
 
-# git tag
+# git tag - add a tag to the most recent commit
+  	  - add a tag to a specific commit if a SHA is passed
 
 # git merge
 
