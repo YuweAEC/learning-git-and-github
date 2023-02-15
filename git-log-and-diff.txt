@@ -1,5 +1,5 @@
 here we all will see various flag's of git log which are used to see the information and the details of or various commits entire that repo
-
+we will alaso be able to see the a new command , i.e ,git diff in this futher
 
 # git log 
  
@@ -21,3 +21,12 @@ here we all will see various flag's of git log which are used to see the informa
  -> git log -w:
    - to ignore changes to whitespace
 
+
+# git diff
+
+the chsnges that have made but not save or committed yet will be shown be this command
+
+this command will show ->
+   - the files that we modified.
+   - the location of the lines from where we added or removed anything
+   - and the changes that we made in this in files
