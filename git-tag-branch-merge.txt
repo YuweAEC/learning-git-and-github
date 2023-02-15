@@ -1,10 +1,19 @@
 Here my advancement in git get starts 
 
-# git tag - add a tag to the most recent commit
+# git tag
+
+the git tag command is used to add a marker on a specific commit. The tag does not move around as new commits are added.
+
+          - add a tag to the most recent commit
   	  - add a tag to a specific commit if a SHA is passed
 
-# git merge
-
 # git branch
+
+the git branch command is used to manage branches in Git
+
+This command is used to:
+   - list out local branches
+   - create new branches
+   - remove branches
 
 #
