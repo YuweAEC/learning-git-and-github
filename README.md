@@ -7,15 +7,15 @@
 
 ## Title 
 
- > In this repo i will talk all about *GIT* and it's various Commands
+ > In this repo i will talk all about ***GIT*** and it's various Commands
 
 ## Introduction
 
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
+GitHub is a code hosting platform for ***version control*** and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
 
 > ### Here's an short view of my file representation 
 > 
->> refer the following list to get familiar with my entire git repo
+>> Refer the following list to get familiar with my entire git repo
 > - 1. git-status.txt
 > - 2. adding-repo.txt
 > - 3. view-in-git.txt
@@ -27,9 +27,9 @@ GitHub is a code hosting platform for version control and collaboration. It lets
 
 ## Authors
 
- - Yuvraj Singh
+ - **Yuvraj Singh**
 
 ## Acknowledgements
 
- - Gaurav Singh
+ - **Gaurav Singh**
 
