@@ -13,9 +13,15 @@
 
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
 
-> Here's an short view of my file representation 
+> ### Here's an short view of my file representation 
 > 
 >> refer the following list to get familiar with my entire git repo
+> - 1. git-status.txt
+> - 2. adding-repo.txt
+> - 3. view-in-git.txt
+> - 4. log-and-diff.txt
+> - 5. show-in-git.txt
+> - 6. tag-branch-merge.txt
 
 ## Authors
 
