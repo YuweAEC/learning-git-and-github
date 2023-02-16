@@ -22,7 +22,7 @@ GitHub is a code hosting platform for version control and collaboration. It lets
 > - 4. log-and-diff.txt
 > - 5. show-in-git.txt
 > - 6. tag-branch-merge.txt
-
+>>> All the files are set as they should be. 
 ## Authors
 
  - Yuvraj Singh
