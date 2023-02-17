@@ -16,5 +16,7 @@ This command is used to:
    - create new branches
    - remove branches
 
-#
+# git merge ->
+
+combining various branches together(as per need) is known as merging.
 
