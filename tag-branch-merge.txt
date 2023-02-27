@@ -20,7 +20,7 @@ This command is used to:
 
 combining various branches together(as per need) in git is known as merging.
 generally there two type of merge:
-    - fast forward merge :- the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the       same commit as the other branch.
+    - fast forward merge :- the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
     - the regular type of merge :- two divergent branches are combined and a merge commit is created 
 
 
