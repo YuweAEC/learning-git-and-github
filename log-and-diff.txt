@@ -1,25 +1,28 @@
-here we all will see various flag's of git log which are used to see the information and the details of or various commits entire that repo
+here, we all will see various flag's of git log which are used to see the information and the details of or various commits entire that repo
 we will alaso be able to see the a new command , i.e ,git diff in this futher
 
 # git log 
  
- -> git log --oneline:
+ -> git log --oneline :
    - lists one commit per line
    - shows the first 7 characters of the commit's SHA
    - shows the commit's message
  
- -> git log --stat:
+ -> git log --stat :
    - displays the file(s) that have been modified
    - displays the number of lines that have been added/removed
    - displays a summary line with the total number of modified files and lines that have been added/removed
  
- -> git log -p:
+ -> git log -p :
    - displays the files that have been modified
    - displays the location of the lines that have been added/removed
    - displays the actual changes that have been made
 
- -> git log -w:
+ -> git log -w :
    - to ignore changes to whitespace
+
+ -> git log --decorate :
+   - 
 
 
 # git diff
