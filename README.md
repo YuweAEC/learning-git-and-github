@@ -12,6 +12,7 @@
 ## Introduction:-
 
 GitHub is a code hosting platform for ***version control*** and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
+to gain more about git.
 
 > ### Here's an short view of my file representation 
 > we can use git to store out codes anad programes in remote area from our local computer
