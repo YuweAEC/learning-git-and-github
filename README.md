@@ -18,7 +18,7 @@ to gain more about git.
 > we can use git to store out codes anad programes in remote area from our local computer
 
 >> Refer the following list to get familiar with my entire git repo
-> - 1. git-status.txt
+> - 1. git-starts.txt
 > - 2. adding-repo.txt
 > - 3. view-in-git.txt
 > - 4. log-and-diff.txt
