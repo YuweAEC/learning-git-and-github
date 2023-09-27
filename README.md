@@ -7,7 +7,7 @@
 
 ## Title:-
 
-  In this repo i will talk all about ***GIT*** and it's various Commands
+  In this repo i will talk all about ***GIT*** and ***VCS*** or ***SCM***  and ***GitHub*** 
 
 ## Introduction:-
 
