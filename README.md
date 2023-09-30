@@ -7,7 +7,7 @@
 
 ## Title:-
 
-  In this repo i will talk all about ***GIT*** and ***VCS*** or ***SCM***  and ***GitHub*** 
+In this repo i will talk all about ***GIT*** and ***VCS*** or ***SCM***  and ***GitHub*** 
 
 ## Introduction:-
 
@@ -16,7 +16,7 @@ to gain more about git.
 
 ### Here's an short view of my file representation 
 
-   we can use git to store out codes anad programes in remote area from our local computer
+we can use git to store out codes anad programes in remote area from our local computer
 
 >> Refer the following list to get familiar with my entire git repo
 
