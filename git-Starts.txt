@@ -1,13 +1,16 @@
-From here we start our git journey .
+From here, we begin our Git journey.
 
-Now we will se who to convert or make any file or folder into git file or folder 
+Now, let's see how to convert or make any file or folder into a Git file or folder.
 
+## To create:
 
-# TO create -
+```bash
+git init   # To initialize a new Git repository
+```
 
- * git init - to initialize a new git repository
+## To push:
 
-# TO push -
-
- * git push <remote or local> <branch name> - used to save all commits to the remote or local repository
+```bash
+git push <remote or local> <branch name>   # Used to save all commits to the remote or local repository
+```
 
