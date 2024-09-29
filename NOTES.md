@@ -91,6 +91,7 @@ Staging all files in a folder:
 ```sh
 $ git add --all
 $ git add -A
+$ git add .
 ```
 
 ### Making a Commit
