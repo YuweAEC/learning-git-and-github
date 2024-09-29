@@ -18,7 +18,7 @@ Welcome to the Git Essentials repository! This repository serves as a comprehens
 
 Before diving into Git, let's familiarize ourselves with some key concepts:
 
-- **Version Control System (VCS)**: Git allows you to manage changes to your project over time, providing features like reverting files, reviewing changes, and tracking modifications.
+- **Version Control System (VCS)/Source Code Manager(SCM)**: Git allows you to manage changes to your project over time, providing features like reverting files, reviewing changes, and tracking modifications.
   
 - **Repository (Repo)**: A repository is a directory that contains your project work along with hidden files used by Git. Repositories can be local (on your computer) or remote (on a server).
 
