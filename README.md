@@ -86,3 +86,4 @@ Contributions to this repository are welcome! If you have suggestions for improv
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 Now, let's dive into the world of Git and unleash the full potential of version control!
+
