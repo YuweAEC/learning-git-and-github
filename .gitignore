@@ -1,1 +1,31 @@
-./.exe
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build directories
+build/
+dist/
+bin/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies and packages
+node_modules/
+venv/
+env/
+__pycache__/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+.tmp/
+tmp/
+temp/
