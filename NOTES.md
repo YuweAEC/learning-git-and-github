@@ -312,5 +312,4 @@ $ git commit --amend
 
 Thanks for reading!
 ```
-
 This `NOTES.md` file provides a structured and easy-to-read guide for using Git and GitHub, organized in a logical manner with clear explanations of each topic.
