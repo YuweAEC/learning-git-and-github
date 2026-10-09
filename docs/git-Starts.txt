@@ -17,72 +17,71 @@ git push <remote or local> <branch name>   # Used to save all commits to the rem
 
 
 
-
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// Initialize LCD. Address 0x27 is standard for 16x2 I2C modules.
+// Initialize the 16x2 LCD display at address 0x27. 
+// Note: If text does not appear after uploading, change 0x27 to 0x3F.
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-const int BUTTON_PIN = 2; // Inside manual button
-const int RELAY_PIN  = 3; // Electronic relay control
-const int TOUCH_PIN  = 4; // Outside touch sensor handle
+// Pin Mappings
+const int TOUCH_SENSOR_PIN = 2; // Touch Pad Input
+const int PUSH_BUTTON_PIN  = 3; // Push Button Input
+const int RELAY_PIN        = 4; // Relay Driver Output
 
 void setup() {
+  // Define input pins
+  pinMode(TOUCH_SENSOR_PIN, INPUT);
+  
+  // Internal pullup configuration ensures pin stays HIGH until pressed down to GND
+  pinMode(PUSH_BUTTON_PIN, INPUT_PULLUP); 
+  
+  // Set relay control pin as output
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW); // Start with lock fully secure
+
+  // Fire up the I2C LCD Screen
   lcd.init();
   lcd.backlight();
   
-  // Configure pin modes
-  pinMode(BUTTON_PIN, INPUT_PULLUP); // Reads LOW when pressed
-  pinMode(TOUCH_PIN, INPUT);         // Reads HIGH when touched
-  pinMode(RELAY_PIN, OUTPUT);
+  // System Boot Visualization Banner
+  lcd.setCursor(0, 0);
+  lcd.print("Smart Lock V1.0");
+  lcd.setCursor(0, 1);
+  lcd.print("Booting System..");
+  delay(2000);
   
-  // Ensure the lock remains closed at startup
-  digitalWrite(RELAY_PIN, LOW);
-  
-  showLockedScreen();
+  renderSecuredDisplay();
 }
 
 void loop() {
-  // Read inputs
-  bool buttonPressed = (digitalRead(BUTTON_PIN) == LOW);
-  bool touchDetected = (digitalRead(TOUCH_PIN) == HIGH);
-  
-  // Trigger lock if either the touch sensor OR inside button is activated
-  if (buttonPressed || touchDetected) {
-    
-    // 1. Update visual interface
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print("ACCESS GRANTED");
-    lcd.setCursor(0, 1);
-    
-    if (touchDetected) {
-      lcd.print("TOUCH TRIGGERED ");
-    } else {
-      lcd.print("BUTTON PRESSED  ");
-    }
-    
-    // 2. Fire the relay to pull back the physical door bolt latch
-    digitalWrite(RELAY_PIN, HIGH);
-    
-    // 3. Keep the lock retracted for a 5-second entry window
-    delay(5000);
-    
-    // 4. Release power to securely relock the door frame latch
-    digitalWrite(RELAY_PIN, LOW);
-    
-    // 5. Restore normal standby screen monitoring status
-    showLockedScreen();
+  int touchState = digitalRead(TOUCH_SENSOR_PIN);
+  int buttonState = digitalRead(PUSH_BUTTON_PIN); 
+
+  // System checks: Sensor goes HIGH when touched OR button drops to LOW when pressed
+  if (touchState == HIGH || buttonState == LOW) {
+    executeUnlockSequence();
   }
 }
 
-void showLockedScreen() {
+void executeUnlockSequence() {
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("  SMART LOCK  ");
+  lcd.print(">> ACCESS OK <<");
   lcd.setCursor(0, 1);
-  lcd.print("  STATE: LOCKED ");
+  lcd.print("Lock Retracted ");
+  
+  digitalWrite(RELAY_PIN, HIGH); // Click the relay shut to inject 12V into lock
+  delay(3000);                   // Keep door mechanism open for a 3-second window
+  
+  digitalWrite(RELAY_PIN, LOW);  // Cut relay power to safely re-lock the solenoid
+  renderSecuredDisplay();
 }
 
-
+void renderSecuredDisplay() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("  SYSTEM READY  ");
+  lcd.setCursor(0, 1);
+  lcd.print("Scan Touch Pad  ");
+}
