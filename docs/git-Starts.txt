@@ -14,3 +14,75 @@ git init   # To initialize a new Git repository
 git push <remote or local> <branch name>   # Used to save all commits to the remote or local repository
 ```
 
+
+
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+// Initialize LCD. Address 0x27 is standard for 16x2 I2C modules.
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+const int BUTTON_PIN = 2; // Inside manual button
+const int RELAY_PIN  = 3; // Electronic relay control
+const int TOUCH_PIN  = 4; // Outside touch sensor handle
+
+void setup() {
+  lcd.init();
+  lcd.backlight();
+  
+  // Configure pin modes
+  pinMode(BUTTON_PIN, INPUT_PULLUP); // Reads LOW when pressed
+  pinMode(TOUCH_PIN, INPUT);         // Reads HIGH when touched
+  pinMode(RELAY_PIN, OUTPUT);
+  
+  // Ensure the lock remains closed at startup
+  digitalWrite(RELAY_PIN, LOW);
+  
+  showLockedScreen();
+}
+
+void loop() {
+  // Read inputs
+  bool buttonPressed = (digitalRead(BUTTON_PIN) == LOW);
+  bool touchDetected = (digitalRead(TOUCH_PIN) == HIGH);
+  
+  // Trigger lock if either the touch sensor OR inside button is activated
+  if (buttonPressed || touchDetected) {
+    
+    // 1. Update visual interface
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("ACCESS GRANTED");
+    lcd.setCursor(0, 1);
+    
+    if (touchDetected) {
+      lcd.print("TOUCH TRIGGERED ");
+    } else {
+      lcd.print("BUTTON PRESSED  ");
+    }
+    
+    // 2. Fire the relay to pull back the physical door bolt latch
+    digitalWrite(RELAY_PIN, HIGH);
+    
+    // 3. Keep the lock retracted for a 5-second entry window
+    delay(5000);
+    
+    // 4. Release power to securely relock the door frame latch
+    digitalWrite(RELAY_PIN, LOW);
+    
+    // 5. Restore normal standby screen monitoring status
+    showLockedScreen();
+  }
+}
+
+void showLockedScreen() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("  SMART LOCK  ");
+  lcd.setCursor(0, 1);
+  lcd.print("  STATE: LOCKED ");
+}
+
+
